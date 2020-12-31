@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(250, 244, 237);
+}
+
+#navbar {
+    background-color: rgb(121, 89, 54);
+}
+
+
+.modal-body {
+    background-color: rgb(250, 244, 237);
+}
+
+.navbar-toggler-icon {
+    color: rgb(107, 100, 100)
+}

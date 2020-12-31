@@ -1,73 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+     <!-- build:css css/main.css -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
 
-<head>
-    <meta charset="utf-8" />
-     <!-- Required meta tags always come first -->
-     <meta charset="utf-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1" />
- 
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
- 
-    <title>NuCamp: A Better Way To Camp</title>
-</head>
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+     <!-- endbuild -->
 
-<body>
-
-    <header>
-        <div>
-            <h1>NuCamp</h1>
-            <h2>a better way to camp</h2>
+    <title>Country Construction USA</title>
+  </head>
+  <body>
+    
+      <div class="container">
+        <div class="row mt-3 mb-0">
+          <div class="col-sm text-center ">
+            <img src="https://static.mywebsites360.com/c863e3ade014497190b5de42ea6e60e3/i/b8a16dade5b449f6bfafa12ac4d13ca2/1/5feFb8zhrk/word-logo.png"
+      alt="Country Construction" title="Country Construction" itemprop="logo">
+          </div>
         </div>
-    </header>
-
-    <div>
-        <h2>Discover & Review</h2>
-        <h3>Our Campsites</h3>
-        <p>Explore our growing database of curated campsites and leave your own reviews!</p>
     </div>
-
-    <div>
-        <h2>Featured Campsites</h2>
-        <h3>React Lake Campground</h3>
-        <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+      <div class="container-fluid mt-0">
+      <div class="row">
+      <div class="col">
+    <nav class="navbar navbar-expand-lg ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa fa-list fa-lg"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#windows">Windows</a>
+                  <a class="dropdown-item" href="#doors">Doors</a>
+                  <a class="dropdown-item" href="#decks">Decks</a>
+                  <a class="dropdown-item" href="#fences">Fences</a>
+                  <a class="dropdown-item" href="#siding">Siding</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item contactBtn">Get a Free Estimate</a>
+                </div>
+              </li>
+             <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contactBtn">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+       </div>
     </div>
+      </div>
+      
+    <div id="contactModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header ">
+                  <h3 class="modal-title">Get a Free Quote Today!</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <div class="container-fluid">
+                    <form>
+                      <div class="form-group row">
+                          <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                          <div class="col-md-10">
+                              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                          <div class="col-md-10">
+                              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                          <div class="col-5 col-md-3">
+                              <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                          </div>
+                          <div class="col-7">
+                              <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="email" class="col-md-2 col-form-label">Email</label>
+                          <div class="col-md-10">
+                              <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                          </div>
+                      </div>
+                     
 
-    <div>
-        <h2>Our Community Partners</h2>
-        <h3>Bootstrap Outfitters</h3>
-        <p>Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                      <div class="form-group row">
+                        <div class="col offset-md-2">
+                            What Service Are You Looking For?
+                            <br>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                <label for="contactYes" class="form-check-label">Windows</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                <label for="contactNo" class="form-check-label">Doors</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                              <label for="contactNo" class="form-check-label">Deck</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                            <label for="contactNo" class="form-check-label">Fencing</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                          <label for="contactNo" class="form-check-label">Siding</label>
+                      </div>
+                        </div>
+                    </div>
+
+                      <div class="form-group row">
+                          <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                          <div class="col-md-10">
+                              <textarea class="form-control" id="feedback" name="feedback" rows="3"></textarea>
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <div class="offset-md-2 col-md-10">
+                              <button type="submit" class="btn btn-secondary">Send Feedback</button>
+                          </div>
+                      </div>
+                  </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    
+      <div class="container-fluid">
+        <img class="d-block w-100 img1" src="img/14842959_l.jpg" width="30" height="500" alt="construction image">
     </div>
+      </div>
+      <br>
+      <div class="container">
+          <div class="row">
+              <div class="col mx-auto">
+      <h2 class="text-center" >Welcome to Country Construction</h2>
+    </div>
+</div>
+     <p>Your home does so much for you and your family. How can you take care of it in return?
+          Turn to our team for a variety of exterior remodeling services to refresh your home. 
+          From boosting the curb appeal to improving the overall functionality and performance of your property, 
+          we do it all for our community across Northern Colorado. Get in touch now and let us know how we can help you.
+        </p><p><em>Why choose us? </em></p><p>Since 2007, we’ve provided quality craftsmanship and unparalleled customer 
+            service to residents and property managers across the area. After all, Colorado is our home. We believe in doing 
+            our part to ensure both the state and the homes within it remain in the best possible condition. Reach out today to 
+            learn more about our team and get started.</p>
+       
+    
+</div>
+    
+      <div class="container">
+      <div class="row row-content justify-content-center">
+        <div class="col-sm-">
+          <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#windows" role="tab" data-toggle="tab">Windows</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#doors" role="tab"  data-toggle="tab">Doors</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#decks" role="tab"  data-toggle="tab">Decks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fences" role="tab"  data-toggle="tab">Fences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#siding" role="tab"  data-toggle="tab">Siding</a>
+            </li>
+        </ul>
+          <div class="tab-content justify-content-center">
+            <div role="tabpanel" class="tab-pane fade show active" id="windows">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/window-icon.png" alt="Breadcrumb Trail" />
+                    <div class="media-body align-self-center">
+                    <h2><a href="#">Windows</a></h2>
+                    <div><p>Improve your home’s energy efficiency while boosting its appearance by 
+                        turning to us for window services.</p><a href="/our-services/windows" target="_blank"
+                             rel="noopener noreferrer" class="button">GET AN ESTIMATE</a></p></div>
+                    </div>
+                </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="doors">
+                            <div class="media">
+                                <img class="d-flex mr-3 img-thumbnail" src="img/doors.png" alt="Breadcrumb Trail" />
+                                <div class="media-body align-self-center">
+                                <h2><a href="#">Doors</a></h2>
+                                <div><p>Whether your door is falling off the hinges or you’re just looking to update the 
+                                    house’s style, we’re here to help.</p><a href="/our-services/windows" target="_blank"
+                                         rel="noopener noreferrer" class="button">GET AN ESTIMATE</a></p></div>
+                                </div>
+                            </div>
+                                    </div>
+            <div role="tabpanel" class="tab-pane fade" id="decks">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/deck-icon.png" alt="Breadcrumb Trail" />
+                    <div class="media-body align-self-center">
+                    <h2><a href="#">Decks</a></h2>
+                    <div><p>Handle your new decking installation, deck repair, or deck replacement the right way by partnering with the
+                         professionals at Country Construction. Join our growing
+                           list of thrilled customers by reaching out today.</p><a href="/our-services/windows" target="_blank"
+                             rel="noopener noreferrer" class="button">GET AN ESTIMATE</a></p></div>
+                    </div>
+                </div>
+                        </div>
+            
+            <div role="tabpanel" class="tab-pane fade" id="fences">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/window-icon.png" alt="Breadcrumb Trail" />
+                    <div class="media-body align-self-center">
+                    <h2><a href="#">Fences</a></h2>
+                    <div><p>Ensure your property is both pristine and protected by selecting a fencing repair or 
+                        installation from our team.</p><a href="/our-services/windows" target="_blank"
+                             rel="noopener noreferrer" class="button">GET AN ESTIMATE</a></p></div>
+                    </div>
+                </div>
+                        </div>
+           
+            <div role="tabpanel" class="tab-pane fade" id="siding">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/siding-icon.png" alt="Breadcrumb Trail" />
+                    <div class="media-body align-self-center">
+                    <h2><a href="#">Siding</a></h2>
+                    <div><p>Your home’s siding determines your curb appeal, the cost of your bills, and your overall comfort.
+                         Call now to begin.</p><a href="/our-services/windows" target="_blank"
+                             rel="noopener noreferrer" class="button">GET AN ESTIMATE</a></p></div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+</div>
+        
+     
+<hr>
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-sm-3">
+             <img src="https://static.mywebsites360.com/c863e3ade014497190b5de42ea6e60e3/i/aef656f3fa3a4e3993e7b71e227f1f0a/1/4SoifmQp45JMgBnHdmR4G/badge01-brown.png" data-asset="aef656f3fa3a4e3993e7b71e227f1f0a" alt="badge01-brown.png" data-mod="width:150" class="contentImg" tabindex="0">
+           </div>
+           
+           <div class="col-6 col-sm-3">
+             <img src="https://static.mywebsites360.com/c863e3ade014497190b5de42ea6e60e3/i/b32c10b7588941b9b0174cfbb213373d/1/4SoifmQp45JMgBnHdmR4G/badge02-brown.png" data-asset="b32c10b7588941b9b0174cfbb213373d" alt="badge02-brown.png" data-mod="width:150" class="contentImg" tabindex="0">
+           </div>
+           
+           <div class="col-6 col-sm-3">
+             <img src="https://static.mywebsites360.com/c863e3ade014497190b5de42ea6e60e3/i/d7c525c9922e46c5bb574bda17189d3e/1/4SoifmQp45JMgBnHdmR4G/badge03-brown.png" data-asset="d7c525c9922e46c5bb574bda17189d3e" alt="badge03-brown.png" data-mod="width:150" class="contentImg" tabindex="0">
+           </div>
+           
+           <div class="col-6 col-sm-3">
+             <img src="https://static.mywebsites360.com/c863e3ade014497190b5de42ea6e60e3/i/fe68b147d80c47ef9a10c37c266dd2b6/1/4SoifmQp45JMgBnHdmR4G/badge04-brown.png" data-asset="fe68b147d80c47ef9a10c37c266dd2b6" alt="badge04-brown.png" data-mod="width:150" class="contentImg" tabindex="0">
+           </div>
+         </div>
+       </div>
+    </div>
+      <br>
+    <div class="container">
+        <div class="row">
+            <div class="col mx-auto mb-3">
+    <h2 class="text-center" >Trust the Professionals</h2>
+  </div>
+</div>
+  <div class="blockInnerContent" ><p>While we’ve been in business for more than a decade, we’ve offered unparalleled
+       construction services for more than 20 years. Throughout the years, we’ve focused on offering quality services with a 
+       customer-first approach. After all, transparency and lasting results are what matter most. And, as a licensed and insured
+        company, we proudly remain compliant with all building codes and practices. We are both LEED- and EPA-certified. From our first
+         hello to our final farewell, you can trust that you’re in good hands every step of the way. </p><p>If that’s not enough, owner
+              James Westers has been recognized as a Gold Star Installer for Lowe's of Fort Collins for multiple years. We use the 
+              latest technology and the insight only decades of experience can provide to ensure you love your results. Plus, we do 
+              it all with a smile. That’s the Country Construction difference.</p>
+                </div>
 
-    <footer>
-        <div>
-            <h5>Links</h5>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Sites</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div>
-            <h5>Social</h5>
-            <a href="http://instagram.com/">Instagram</a>
-            <a href="http://facebook.com/">Facebook</a>
-            <a href="http://twitter.com/">Twitter</a>
-            <a href="http://youtube.com/">YouTube</a>
-        </div>
-        <div>
-            Tel: 1-206-555-1234<br />
-            Email: campsites@nucamp.co
-        </div>
-    </footer>
+                <footer class="site-footer">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-4 col-sm-2 offset-1">
+                          <h5>Links</h5>
+                          <ul class="list-unstyled list-inline">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="#">Sites</a></li>
+                            <li><a href="contactus.html">Contact</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6 col-sm-5 text-center">
+                          <h5>Social</h5>
+                          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                          <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                          <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                          <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                          <a role="button" class="btn btn-link" href="tel:+19705663833"><i class="fa fa-phone"></i> 1-970-566-3833</a><br />
+                          <a role="button" class="btn btn-link" href="mailto:jmwesters@gmail.com
 
+                          "><i class="fa fa-envelope-o"></i> jmwesters@gmail.com
+
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </footer>
+</div><!-- /blockText-->
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-</body>
-
+    <script src="js/scripts.js"></script>
+     <!-- endbuild -->
+  </body>
 </html>
